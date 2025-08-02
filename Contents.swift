@@ -15,6 +15,11 @@ class Car{
         self.currentYear = currentYear
     }
     public func getCarInfo(){
-        print(<#T##items: Any...##Any#>)
+        print("\(yearCreated) \(brand) \(model)")
     }
 }
+var car1 = Car(brand: "Toyota", model: "Corolla", yearCreated: 2022, currentYear: 2025)
+var car2 = Car(brand: "Ford", model: "Mustang", yearCreated: 2022, currentYear: 2025)
+
+print(car1.getCarInfo())
+print(car2.getCarInfo())
