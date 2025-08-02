@@ -14,8 +14,8 @@ class Car{
         self.yearCreated = yearCreated
         self.currentYear = currentYear
     }
-    public func getCarInfo(){
-        print("\(yearCreated) \(brand) \(model)")
+    public func getCarInfo() -> String{
+        return "\(yearCreated) \(brand) \(model)"
     }
 }
 var car1 = Car(brand: "Toyota", model: "Corolla", yearCreated: 2022, currentYear: 2025)
